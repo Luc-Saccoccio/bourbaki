@@ -71,7 +71,7 @@ theorem Surjective.comp_surj_snd_surj {g : β → γ} {f : α → β} (hc : Surj
   exact ⟨f x, hy⟩
 
 def Section (s : β → α) (f : α → β) : Prop := ∀ x, f (s x) = x
--- Alternativement : Retract s f
+-- Alternativement : Retract f s
 
 def HasSection (f : α → β) : Prop := ∃ s, Section s f
 
